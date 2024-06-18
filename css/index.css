@@ -1,0 +1,279 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+}
+
+@font-face {
+    font-family: 'LOTTERIACHAB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/LOTTERIACHAB.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'GmarketSansMedium';
+    font-size: 14px;
+    line-height: 24px;
+    color: #60584e;
+    min-width: 1450px;
+}
+
+/*header*/
+#header {
+    background-color: #fff2e1;
+}
+
+.header_inner {
+    margin: auto;
+    width: 1320px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav {
+    font-family: 'LOTTERIACHAB';
+    font-size: 18px;
+    display: flex;
+    position: relative;
+}
+
+.header_inner ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.header_inner ul li {
+    padding: 0 20px;
+}
+
+.header_inner ol {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.header_inner ol li {
+    padding: 10px;
+}
+
+/*mainbanner*/
+.main_banner {
+    width: 100%
+}
+
+.main_prev {
+    background: url(./img/leftbtn.png) no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+
+.main_next {
+    background: url(./img/rightbtn.png) no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+}
+
+.main_prev::after,
+.main_next::after {
+    display: none;
+}
+
+
+/*menu*/
+
+.menu {
+    margin: 120px auto;
+    width: 1320px;
+    text-align: center;
+}
+
+.menu_swiper,
+.goods_swiper {
+    margin: auto;
+    width: 1320px;
+}
+
+.goods_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.goods_list li {
+    width: 331px;
+    height: 331px;
+}
+
+.goods_list li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+.goods1 {
+    background: url(./img/goods1.png) no-repeat center top;
+}
+
+.goods1:hover {
+    background: url(./img/hover1.png) no-repeat center top;
+}
+
+.goods2 {
+    background: url(./img/goods2.png) no-repeat center top;
+}
+
+.goods2:hover {
+    background: url(./img/hover2.png) no-repeat center top;
+}
+
+.goods3 {
+    background: url(./img/goods3.png) no-repeat center top;
+}
+
+.goods3:hover {
+    background: url(./img/hover3.png) no-repeat center top;
+}
+
+.goods4 {
+    background: url(./img/goods4.png) no-repeat center top;
+}
+
+.goods4:hover {
+    background: url(./img/hover4.png) no-repeat center top;
+}
+
+#event {
+    background-color: #fff2e1;
+}
+
+.event_menu {
+    padding-top: 80px;
+}
+
+.event_bn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.event_bn li {margin: 0 20px;
+margin-bottom: 80px;}
+
+.insta_bn {display: flex; justify-content: center; align-items: center;}
+
+.insta_bn img {margin: 10px;}
+
+.insta_bn li {
+	position: relative;
+}
+.insta_bn li::before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 0;
+	height: 0;
+	background: rgba(255,255,255,.2);
+	border-radius: 100%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	opacity: 0;
+}
+.insta_bn li:hover::before {
+	-webkit-animation: circle .75s;
+	animation: circle .75s;
+}
+@-webkit-keyframes circle {
+	0% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	100% {
+		width: 200%;
+		height: 200%;
+		opacity: 0;
+	}
+}
+@keyframes circle {
+	0% {
+		opacity: 1;
+	}
+	40% {
+		opacity: 1;
+	}
+	100% {
+		width: 200%;
+		height: 200%;
+		opacity: 0;
+	}
+}
+#insta {
+    margin-bottom: 150px;
+}
+
+/*footer*/
+#footer {
+    background-color: #fff2e1; 
+    width: 100%;
+    height: 150px;
+    margin-top: 15px;
+}
+
+.footer_inner {
+    margin: auto;
+    width: 1320px;
+    display: flex;
+    padding-top: 40px;
+    padding-left: 80px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    box-sizing: border-box;
+}
+
+.footer_tx ul {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+}
+
+.footer_tx ul li {
+    padding-right: 30px;
+}
+
+.footer_tx {
+    padding-left: 50px;
+    color: #60584e;
+}
