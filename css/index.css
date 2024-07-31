@@ -139,35 +139,35 @@ body {
 
 
 .goods1 {
-    background: url(./img/goods1.png) no-repeat center top;
+    background: url(../img/goods1.png) no-repeat center top;
 }
 
 .goods1:hover {
-    background: url(./img/hover1.png) no-repeat center top;
+    background: url(../img/hover1.png) no-repeat center top;
 }
 
 .goods2 {
-    background: url(./img/goods2.png) no-repeat center top;
+    background: url(../img/goods2.png) no-repeat center top;
 }
 
 .goods2:hover {
-    background: url(./img/hover2.png) no-repeat center top;
+    background: url(../img/hover2.png) no-repeat center top;
 }
 
 .goods3 {
-    background: url(./img/goods3.png) no-repeat center top;
+    background: url(../img/goods3.png) no-repeat center top;
 }
 
 .goods3:hover {
-    background: url(./img/hover3.png) no-repeat center top;
+    background: url(../img/hover3.png) no-repeat center top;
 }
 
 .goods4 {
-    background: url(./img/goods4.png) no-repeat center top;
+    background: url(../img/goods4.png) no-repeat center top;
 }
 
 .goods4:hover {
-    background: url(./img/hover4.png) no-repeat center top;
+    background: url(../img/hover4.png) no-repeat center top;
 }
 
 #event {
